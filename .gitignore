@@ -1,0 +1,11 @@
+# This file tells Git which files and directories to ignore in this repository.
+# Any files or folders listed here will not be tracked by Git.
+
+# OS X
+.DS_Store
+
+# Notities
+notities.txt
+
+# QLC+ copies
+*copy.qxw
