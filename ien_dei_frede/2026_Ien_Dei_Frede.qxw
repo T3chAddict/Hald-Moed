@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>Chris Jorritsma</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0" Passthrough="True">
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>0</ID>
+   <Name>Horizon verlichting LED</Name>
+   <Universe>0</Universe>
+   <Address>9</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>2</ID>
+   <Name>Front 1 MultiDim MK III DMX </Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>3</ID>
+   <Name>Podium Flood MultiDim MK III DMX</Name>
+   <Universe>0</Universe>
+   <Address>13</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>4</ID>
+   <Name>Front 2 MultiDim MK III DMX</Name>
+   <Universe>0</Universe>
+   <Address>4</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>5</ID>
+   <Name>Podium special 2 MultiDim MK III DMX</Name>
+   <Universe>0</Universe>
+   <Address>17</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <ChannelsGroup ID="0" Name="Testgroep" Value="0">2,0,2,1,3,0,3,1</ChannelsGroup>
+  <Function ID="0" Type="Scene" Name="TV verlichting" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">2,0</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Chaser" Name="Huskeamer (knop)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="500" Hold="4294967294" FadeOut="500">16</Step>
+  </Function>
+  <Function ID="2" Type="Audio" Name="biem-2-keer.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="6002"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.7">geluiden/biem-2-keer.wav</Source>
+  </Function>
+  <Function ID="3" Type="Collection" Name="Nijslezer 02 collectie" Path="nijslezer">
+   <Step Number="0">33</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">12</Step>
+  </Function>
+  <Function ID="4" Type="Sequence" Name="TV sequence" BoundScene="0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="20" Hold="100" FadeOut="20" Values="1">5:2,187</Step>
+   <Step Number="1" FadeIn="10" Hold="70" FadeOut="10" Values="1">5:2,135</Step>
+   <Step Number="2" FadeIn="15" Hold="135" FadeOut="20" Values="1">5:2,174</Step>
+   <Step Number="3" FadeIn="5" Hold="55" FadeOut="10" Values="1">5:2,200</Step>
+   <Step Number="4" FadeIn="20" Hold="180" FadeOut="30" Values="1">5:2,145</Step>
+   <Step Number="5" FadeIn="10" Hold="80" FadeOut="10" Values="1">5:2,171</Step>
+   <Step Number="6" FadeIn="10" Hold="120" FadeOut="20" Values="1">5:2,192</Step>
+   <Step Number="7" FadeIn="10" Hold="160" FadeOut="20" Values="1">5:2,140</Step>
+   <Step Number="8" FadeIn="10" Hold="130" FadeOut="25" Values="1">5:2,187</Step>
+   <Step Number="9" FadeIn="20" Hold="180" FadeOut="30" Values="1">5:2,158</Step>
+  </Function>
+  <Function ID="5" Type="Audio" Name="biem-en-schoten.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="5814"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.7">geluiden/biem-en-schoten.wav</Source>
+  </Function>
+  <Function ID="6" Type="Audio" Name="opening-nummer-v2.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="174697"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.6">opening-nummer-v2.wav</Source>
+  </Function>
+  <Function ID="7" Type="Audio" Name="geweer-schoten.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="6961"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.7">geluiden/geweer-schoten.wav</Source>
+  </Function>
+  <Function ID="8" Type="Chaser" Name="Muziek (knop)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="3000" Hold="240000" FadeOut="3000">6</Step>
+  </Function>
+  <Function ID="9" Type="Collection" Name="Muziek collectie">
+   <Step Number="0">16</Step>
+   <Step Number="1">6</Step>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Onweer scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">3,0</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Sequence" Name="Onweer sequence" BoundScene="10">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="50" Hold="100" FadeOut="50" Values="4">0:0,20,1,20,2,255:3:3,255</Step>
+   <Step Number="1" FadeIn="50" Hold="100" FadeOut="50" Values="4">0:0,20,1,20,2,255:3:3,30</Step>
+   <Step Number="2" FadeIn="50" Hold="100" FadeOut="50" Values="4">0:0,20,1,20,2,255:3:3,255</Step>
+   <Step Number="3" FadeIn="50" Hold="100" FadeOut="50" Values="4">0:0,20,1,20,2,255:3:3,30</Step>
+   <Step Number="4" FadeIn="250" Hold="250" FadeOut="250" Values="4">0:0,20,1,20,2,255:3:3,255</Step>
+  </Function>
+  <Function ID="12" Type="Audio" Name="nijslezer-02.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="33418"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-02.wav</Source>
+  </Function>
+  <Function ID="13" Type="Audio" Name="nijslezer-03.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="39039"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-03.wav</Source>
+  </Function>
+  <Function ID="14" Type="Audio" Name="opening-nummer-v1.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="204893"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.6">opening-nummer-v1.wav</Source>
+  </Function>
+  <Function ID="15" Type="Audio" Name="nijslezer-04.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="65260"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-04.wav</Source>
+  </Function>
+  <Function ID="16" Type="Scene" Name="Huskeamer bedriew 2 scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,200,1,150,2,150,3,140</FixtureVal>
+   <FixtureVal ID="4">0,60,1,60,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">1,130,3,175</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Collection" Name="Schoten collectie">
+   <Step Number="0">16</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="18" Type="Audio" Name="biem-1-keer-v1.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="2598"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.7">geluiden/biem-1-keer-v1.wav</Source>
+  </Function>
+  <Function ID="19" Type="Audio" Name="tv-zender-schakelen.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="72568"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.8">geluiden/tv-zender-schakelen.wav</Source>
+  </Function>
+  <Function ID="20" Type="Audio" Name="kerk-bellen.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="8224"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.6">geluiden/kerk-bellen.wav</Source>
+  </Function>
+  <Function ID="21" Type="Audio" Name="nijslezer-05.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="8089"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-05.wav</Source>
+  </Function>
+  <Function ID="22" Type="Collection" Name="TV collectie">
+   <Step Number="0">16</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">19</Step>
+  </Function>
+  <Function ID="23" Type="Chaser" Name="Toneel">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">37</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">27</Step>
+   <Step Number="2" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="3" FadeIn="0" Hold="56495" FadeOut="0" Note="Blz 3">29</Step>
+   <Step Number="4" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="5" FadeIn="0" Hold="33418" FadeOut="0" Note="Blz 5 - Sara docht TV oan">3</Step>
+   <Step Number="6" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="7" FadeIn="0" Hold="39039" FadeOut="0" Note="Blz 15 - Einde pagina">26</Step>
+   <Step Number="8" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="9" FadeIn="0" Hold="65260" FadeOut="0" Note="Blz 30 - Neidat Sam de Rabby der út gooit">34</Step>
+   <Step Number="10" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="11" FadeIn="0" Hold="8089" FadeOut="0" Note="Blz 31 - Sam: Ik ha 'm op 'e bus nei Manhatten set.">35</Step>
+   <Step Number="12" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="13" FadeIn="0" Hold="18628" FadeOut="0" Note="Blz 31 - Einde pagina">36</Step>
+   <Step Number="14" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="15" FadeIn="500" Hold="240000" FadeOut="5000" Note="Blz 32 - Einde pagina (muziek automatisch)">46</Step>
+   <Step Number="16" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">37</Step>
+   <Step Number="17" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="18" FadeIn="0" Hold="41108" FadeOut="0" Note="Blz 33">38</Step>
+   <Step Number="19" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="20" FadeIn="0" Hold="9017" FadeOut="0" Note="Blz 38">40</Step>
+   <Step Number="21" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="22" FadeIn="0" Hold="17910" FadeOut="0" Note="Blz 41 - Miriam: Moatt' jim ris hearre!">41</Step>
+   <Step Number="23" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="24" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 46 - Irving: Se springe!">24</Step>
+   <Step Number="25" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="26" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 46 - Irving: Se springe!">24</Step>
+   <Step Number="27" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="28" FadeIn="0" Hold="6000" FadeOut="0" Note="Blz 57 - Irving: Fjoer!">49</Step>
+   <Step Number="29" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="30" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 58 - Irving: No!">24</Step>
+   <Step Number="31" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="32" FadeIn="0" Hold="5576" FadeOut="0" Note="Blz 58 - Miriam: Harkje mar; it is op it nijs!">42</Step>
+   <Step Number="33" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="34" FadeIn="0" Hold="37101" FadeOut="0" Note="Blz 59 - Sam: Mar dochs in gek, no sara....?">43</Step>
+   <Step Number="35" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="36" FadeIn="0" Hold="8224" FadeOut="0" Note="Blz 64 - Paus: As alle dagen sa binne ...">45</Step>
+   <Step Number="37" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="38" FadeIn="0" Hold="14992" FadeOut="0" Note="Blz 64 - Sam: Ik hie jo útnoege">44</Step>
+   <Step Number="39" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">27</Step>
+   <Step Number="41" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="42" FadeIn="300" Hold="4294967294" FadeOut="300">60</Step>
+   <Step Number="43" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="44" FadeIn="2000" Hold="4294967294" FadeOut="0">37</Step>
+  </Function>
+  <Function ID="24" Type="Collection" Name="Biem 1 keer collectie">
+   <Step Number="0">32</Step>
+   <Step Number="1">18</Step>
+  </Function>
+  <Function ID="25" Type="Audio" Name="nijslezer-06.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="18628"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-06.wav</Source>
+  </Function>
+  <Function ID="26" Type="Collection" Name="Nijslezer 03 collectie" Path="nijslezer">
+   <Step Number="0">27</Step>
+   <Step Number="1">13</Step>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Donker scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="4">3,40</FixtureVal>
+   <FixtureVal ID="0"/>
+   <FixtureVal ID="3"/>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Blackout scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Collection" Name="Nijslezer 01 collectie" Path="nijslezer">
+   <Step Number="0">33</Step>
+   <Step Number="1">54</Step>
+  </Function>
+  <Function ID="30" Type="Audio" Name="nijslezer-07.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="41108"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-07.wav</Source>
+  </Function>
+  <Function ID="31" Type="Scene" Name="Biem verlichting" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">1,0,3,0</FixtureVal>
+   <FixtureVal ID="5">2,0</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Sequence" Name="Biem sequence" BoundScene="31">
+   <Speed FadeIn="0" FadeOut="0" Duration="74"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="10" Hold="64" FadeOut="5" Values="14">0:0,255,1,255,2,255:2:2,80:3:1,130,3,255:4:0,110,1,110:5:2,80</Step>
+   <Step Number="1" FadeIn="0" Hold="107" FadeOut="20" Values="14">2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="2" FadeIn="15" Hold="40" FadeOut="10" Values="14">0:0,255,1,230,2,150:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70</Step>
+   <Step Number="3" FadeIn="0" Hold="215" FadeOut="25" Values="14">2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="4" FadeIn="25" Hold="37" FadeOut="15" Values="14">0:0,255,1,230,2,150:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70</Step>
+   <Step Number="5" FadeIn="0" Hold="74" FadeOut="30" Values="14">2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="6" FadeIn="30" Hold="57" FadeOut="20" Values="14">0:0,255,1,60:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70</Step>
+   <Step Number="7" FadeIn="0" Hold="265" FadeOut="40" Values="14">2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="8" FadeIn="35" Hold="24" FadeOut="35" Values="14">0:0,200:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70</Step>
+   <Step Number="9" FadeIn="0" Hold="294" FadeOut="50" Values="14">2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="10" FadeIn="10" Hold="35" FadeOut="15" Values="14">0:0,255,1,171,2,60:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70:5:2,80</Step>
+   <Step Number="11" FadeIn="0" Hold="90" FadeOut="20" Values="14">0:0,255,1,171,2,60:2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+   <Step Number="12" FadeIn="10" Hold="35" FadeOut="15" Values="14">0:0,255,1,171,2,60:2:0,70,1,70,2,70,3,70:3:1,70,3,35:4:0,70,1,70:5:2,80</Step>
+   <Step Number="13" FadeIn="0" Hold="90" FadeOut="20" Values="14">0:0,255,1,171,2,60:2:0,30,1,30,2,30,3,30:3:1,30,3,15:4:0,30,1,30</Step>
+  </Function>
+  <Function ID="33" Type="Scene" Name="Huskeamer bedriew 1 scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,200,1,150,2,150,3,140</FixtureVal>
+   <FixtureVal ID="4">0,60,1,60,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">1,130,3,130</FixtureVal>
+   <FixtureVal ID="0">0,60,1,60,2,255</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Collection" Name="Nijslezer 04 collectie" Path="nijslezer">
+   <Step Number="0">33</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">15</Step>
+  </Function>
+  <Function ID="35" Type="Collection" Name="Nijslezer 05 collectie" Path="nijslezer">
+   <Step Number="0">33</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">21</Step>
+  </Function>
+  <Function ID="36" Type="Collection" Name="Nijslezer 06 collectie" Path="nijslezer">
+   <Step Number="0">33</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">25</Step>
+  </Function>
+  <Function ID="37" Type="Scene" Name="Skoft scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,130,1,0,2,0,3,130</FixtureVal>
+   <FixtureVal ID="3">0,100,1,100,2,0,3,0</FixtureVal>
+   <FixtureVal ID="0">0,38,1,38,2,38</FixtureVal>
+  </Function>
+  <Function ID="38" Type="Collection" Name="Nijslezer 07 collectie" Path="nijslezer">
+   <Step Number="0">16</Step>
+   <Step Number="1">30</Step>
+  </Function>
+  <Function ID="39" Type="Scene" Name="Applaus scene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,90,1,85,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,229,1,229,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="40" Type="Collection" Name="Nijslezer 08 collectie" Path="nijslezer">
+   <Step Number="0">16</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">47</Step>
+  </Function>
+  <Function ID="41" Type="Collection" Name="Nijslezer 09 collectie" Path="nijslezer">
+   <Step Number="0">16</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">50</Step>
+  </Function>
+  <Function ID="42" Type="Collection" Name="Nijslezer 10 collectie" Path="nijslezer">
+   <Step Number="0">16</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">51</Step>
+  </Function>
+  <Function ID="43" Type="Collection" Name="Nijslezer 11 collectie" Path="nijslezer">
+   <Step Number="0">27</Step>
+   <Step Number="1">52</Step>
+  </Function>
+  <Function ID="44" Type="Collection" Name="Nijslezer 12 collectie" Path="nijslezer">
+   <Step Number="0">16</Step>
+   <Step Number="1">4</Step>
+   <Step Number="2">53</Step>
+  </Function>
+  <Function ID="45" Type="Collection" Name="Klokken collectie">
+   <Step Number="0">16</Step>
+   <Step Number="1">20</Step>
+  </Function>
+  <Function ID="46" Type="Collection" Name="Blackout Muziek collectie">
+   <Step Number="0">28</Step>
+   <Step Number="1">6</Step>
+  </Function>
+  <Function ID="47" Type="Audio" Name="nijslezer-08.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="9017"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-08.wav</Source>
+  </Function>
+  <Function ID="48" Type="Chaser" Name="Biem 2 keer chaser">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2600" FadeOut="0">24</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">16</Step>
+   <Step Number="2" FadeIn="0" Hold="2600" FadeOut="0">24</Step>
+  </Function>
+  <Function ID="49" Type="Chaser" Name="Biem Schoten chaser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">24</Step>
+   <Step Number="1" FadeIn="0" Hold="3500" FadeOut="0">17</Step>
+  </Function>
+  <Function ID="50" Type="Audio" Name="nijslezer-09.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="17910"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-09.wav</Source>
+  </Function>
+  <Function ID="51" Type="Audio" Name="nijslezer-10.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="5576"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-10.wav</Source>
+  </Function>
+  <Function ID="52" Type="Audio" Name="nijslezer-11.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="37101"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-11.wav</Source>
+  </Function>
+  <Function ID="53" Type="Audio" Name="nijslezer-12.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="14992"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-12.wav</Source>
+  </Function>
+  <Function ID="54" Type="Audio" Name="nijslezer-01.wav" Path="nijslezer">
+   <Speed FadeIn="0" FadeOut="0" Duration="56495"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>nijslezzer/nijslezer-01.wav</Source>
+  </Function>
+  <Function ID="55" Type="Audio" Name="onweer.wav" Path="geluiden">
+   <Speed FadeIn="0" FadeOut="0" Duration="15276"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Volume="0.15">geluiden/onweer.wav</Source>
+  </Function>
+  <Function ID="56" Type="Sequence" Name="Zwaailicht sequence" BoundScene="57">
+   <Speed FadeIn="0" FadeOut="0" Duration="74"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="300" FadeOut="0" Values="3"/>
+   <Step Number="1" FadeIn="0" Hold="800" FadeOut="0" Values="3">0:2,255</Step>
+   <Step Number="2" FadeIn="0" Hold="300" FadeOut="0" Values="3"/>
+   <Step Number="3" FadeIn="0" Hold="800" FadeOut="0" Values="3">0:0,255</Step>
+   <Step Number="4" FadeIn="0" Hold="300" FadeOut="0" Values="3"/>
+  </Function>
+  <Function ID="57" Type="Scene" Name="Zwaailicht verlichting" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="58" Type="Chaser" Name="Onweer (knop)">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="200">11</Step>
+   <Step Number="1" FadeIn="200" Hold="14000" FadeOut="0">55</Step>
+  </Function>
+  <Function ID="59" Type="Scene" Name="Applaus geluid &amp; licht" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="60" Type="Sequence" Name="Applaus geluid &amp; licht" BoundScene="59">
+   <Speed FadeIn="300" FadeOut="300" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4">2:0,200</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">2:1,200</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="4">2:2,200</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0" Values="4">2:3,200</Step>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="1">
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="8" Height="3" Depth="4" Units="0" POV="2"/>
+   <FxItem ID="0" XPos="3402.1" YPos="121.384"/>
+   <FxItem ID="2" XPos="3432" YPos="3147"/>
+   <FxItem ID="2" Head="1" XPos="300" YPos="0"/>
+   <FxItem ID="2" Head="2" XPos="300" YPos="0"/>
+   <FxItem ID="2" Head="3" XPos="300" YPos="0"/>
+   <FxItem ID="3" XPos="3402.94" YPos="2045.42"/>
+   <FxItem ID="3" Head="1" XPos="300" YPos="0"/>
+   <FxItem ID="3" Head="2" XPos="300" YPos="0"/>
+   <FxItem ID="3" Head="3" XPos="300" YPos="0"/>
+   <FxItem ID="4" XPos="3410.98" YPos="1111.43"/>
+   <FxItem ID="4" Head="1" XPos="300" YPos="0"/>
+   <FxItem ID="4" Head="2" XPos="300" YPos="0"/>
+   <FxItem ID="4" Head="3" XPos="300" YPos="0"/>
+   <FxItem ID="5" XPos="7356.48" YPos="2079.03" GelColor="#0000ff"/>
+   <FxItem ID="5" Head="1" XPos="300" YPos="0"/>
+   <FxItem ID="5" Head="2" XPos="300" YPos="0"/>
+   <FxItem ID="5" Head="3" XPos="300" YPos="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="Page 1" ID="0">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>4278190080</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="Blackout" ID="29" Icon="">
+    <WindowState Visible="False" X="30" Y="30" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Blackout</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="TV" ID="0" Icon="">
+    <WindowState Visible="False" X="30" Y="100" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Muziek" ID="2" Icon="">
+    <WindowState Visible="False" X="30" Y="170" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="8"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Huskeamer" ID="3" Icon="">
+    <WindowState Visible="False" X="30" Y="240" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Plysje ljocht" ID="4" Icon="">
+    <WindowState Visible="False" X="30" Y="310" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="56"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Onwâr" ID="5" Icon="">
+    <WindowState Visible="False" X="30" Y="380" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="58"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <CueList Caption="Cue list" ID="1">
+    <WindowState Visible="False" X="110" Y="30" Width="705" Height="575"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>23</Chaser>
+    <NextPrevBehavior>2</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+   </CueList>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
