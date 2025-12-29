@@ -4,14 +4,14 @@ This repository tracks and documents all Hald Moed theatre productions, includin
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Current Productions](#current-productions)
-- [Tools & Software](#tools--software)
-- [Workflow Documentation](#workflow-documentation)
-- [File Organization](#file-organization)
-- [Best Practices](#best-practices)
-- [Resources](#resources)
+- [Overview](#-overview)
+- [Project Structure](#-project-structure)
+- [Current Productions](#-current-productions)
+- [Tools & Software](#%EF%B8%8F-tools--software)
+- [Workflow Documentation](#-workflow-documentation)
+- [File Organization](#-file-organization)
+- [Best Practices](#-best-practices)
+- [Resources](#-resources)
 
 ## 🎭 Overview
 
