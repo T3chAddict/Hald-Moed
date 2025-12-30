@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -179,7 +179,7 @@
   <Function ID="18" Type="Audio" Name="biem-1-keer-v1.wav" Path="geluiden">
    <Speed FadeIn="0" FadeOut="0" Duration="2598"/>
    <RunOrder>Loop</RunOrder>
-   <Source Volume="0.7">geluiden/biem-1-keer-v1.wav</Source>
+   <Source Volume="0.85">geluiden/biem-1-keer-v1.wav</Source>
   </Function>
   <Function ID="19" Type="Audio" Name="tv-zender-schakelen.wav" Path="geluiden">
    <Speed FadeIn="0" FadeOut="0" Duration="72568"/>
@@ -207,50 +207,49 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
    <Step Number="0" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">37</Step>
-   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">27</Step>
-   <Step Number="2" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="3" FadeIn="0" Hold="56495" FadeOut="0" Note="Blz 3">29</Step>
-   <Step Number="4" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="5" FadeIn="0" Hold="33418" FadeOut="0" Note="Blz 5 - Sara docht TV oan">3</Step>
-   <Step Number="6" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="7" FadeIn="0" Hold="39039" FadeOut="0" Note="Blz 15 - Einde pagina">26</Step>
-   <Step Number="8" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="9" FadeIn="0" Hold="65260" FadeOut="0" Note="Blz 30 - Neidat Sam de Rabby der út gooit">34</Step>
-   <Step Number="10" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="11" FadeIn="0" Hold="8089" FadeOut="0" Note="Blz 31 - Sam: Ik ha 'm op 'e bus nei Manhatten set.">35</Step>
-   <Step Number="12" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="13" FadeIn="0" Hold="18628" FadeOut="0" Note="Blz 31 - Einde pagina">36</Step>
-   <Step Number="14" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
-   <Step Number="15" FadeIn="500" Hold="240000" FadeOut="5000" Note="Blz 32 - Einde pagina (muziek automatisch)">46</Step>
-   <Step Number="16" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">37</Step>
-   <Step Number="17" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="18" FadeIn="0" Hold="41108" FadeOut="0" Note="Blz 33">38</Step>
-   <Step Number="19" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="20" FadeIn="0" Hold="9017" FadeOut="0" Note="Blz 38">40</Step>
-   <Step Number="21" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="22" FadeIn="0" Hold="17910" FadeOut="0" Note="Blz 41 - Miriam: Moatt' jim ris hearre!">41</Step>
-   <Step Number="23" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="24" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 46 - Irving: Se springe!">24</Step>
-   <Step Number="25" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="26" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 46 - Irving: Se springe!">24</Step>
-   <Step Number="27" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="28" FadeIn="0" Hold="6000" FadeOut="0" Note="Blz 57 - Irving: Fjoer!">49</Step>
-   <Step Number="29" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="30" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 58 - Irving: No!">24</Step>
-   <Step Number="31" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="32" FadeIn="0" Hold="5576" FadeOut="0" Note="Blz 58 - Miriam: Harkje mar; it is op it nijs!">42</Step>
-   <Step Number="33" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="34" FadeIn="0" Hold="37101" FadeOut="0" Note="Blz 59 - Sam: Mar dochs in gek, no sara....?">43</Step>
-   <Step Number="35" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="36" FadeIn="0" Hold="8224" FadeOut="0" Note="Blz 64 - Paus: As alle dagen sa binne ...">45</Step>
-   <Step Number="37" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="38" FadeIn="0" Hold="14992" FadeOut="0" Note="Blz 64 - Sam: Ik hie jo útnoege">44</Step>
-   <Step Number="39" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">27</Step>
-   <Step Number="41" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="42" FadeIn="300" Hold="4294967294" FadeOut="300">60</Step>
-   <Step Number="43" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
-   <Step Number="44" FadeIn="2000" Hold="4294967294" FadeOut="0">37</Step>
+   <Step Number="1" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="2" FadeIn="0" Hold="56495" FadeOut="0" Note="Blz 3">29</Step>
+   <Step Number="3" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="4" FadeIn="0" Hold="33418" FadeOut="0" Note="Blz 5 - Sara docht TV oan">3</Step>
+   <Step Number="5" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="6" FadeIn="0" Hold="39039" FadeOut="0" Note="Blz 15 - Einde pagina">26</Step>
+   <Step Number="7" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="8" FadeIn="0" Hold="65260" FadeOut="0" Note="Blz 30 - Neidat Sam de Rabby der út gooit">34</Step>
+   <Step Number="9" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="10" FadeIn="0" Hold="8089" FadeOut="0" Note="Blz 31 - Sam: Ik ha 'm op 'e bus nei Manhatten set.">35</Step>
+   <Step Number="11" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="12" FadeIn="0" Hold="18628" FadeOut="0" Note="Blz 31 - Einde pagina">36</Step>
+   <Step Number="13" FadeIn="1000" Hold="4294967294" FadeOut="0">33</Step>
+   <Step Number="14" FadeIn="500" Hold="240000" FadeOut="5000" Note="Blz 32 - Einde pagina (muziek automatisch)">46</Step>
+   <Step Number="15" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">37</Step>
+   <Step Number="16" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="17" FadeIn="0" Hold="41108" FadeOut="0" Note="Blz 33">38</Step>
+   <Step Number="18" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="19" FadeIn="0" Hold="9017" FadeOut="0" Note="Blz 38">40</Step>
+   <Step Number="20" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="21" FadeIn="0" Hold="17910" FadeOut="0" Note="Blz 41 - Miriam: Moatt' jim ris hearre!">41</Step>
+   <Step Number="22" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="23" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 46 - Irving: Se springe!">24</Step>
+   <Step Number="24" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="25" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 56 - Sam: dat is it!">24</Step>
+   <Step Number="26" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="27" FadeIn="0" Hold="6000" FadeOut="0" Note="Blz 57 - Irving: Fjoer!">49</Step>
+   <Step Number="28" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="29" FadeIn="0" Hold="2600" FadeOut="0" Note="Blz 58 - Irving: No!">24</Step>
+   <Step Number="30" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="31" FadeIn="0" Hold="5576" FadeOut="0" Note="Blz 58 - Miriam: Harkje mar; it is op it nijs!">42</Step>
+   <Step Number="32" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="33" FadeIn="0" Hold="37101" FadeOut="0" Note="Blz 59 - Sam: Mar dochs in gek, no sara....?">43</Step>
+   <Step Number="34" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="35" FadeIn="0" Hold="8224" FadeOut="0" Note="Blz 64 - Paus: As alle dagen sa binne ...">45</Step>
+   <Step Number="36" FadeIn="1000" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="37" FadeIn="0" Hold="14992" FadeOut="0" Note="Blz 64 - Sam: Ik hie jo útnoege">44</Step>
+   <Step Number="38" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="39" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Muziek knop handmatig">27</Step>
+   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="41" FadeIn="300" Hold="4294967294" FadeOut="300">60</Step>
+   <Step Number="42" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="43" FadeIn="2000" Hold="4294967294" FadeOut="0">37</Step>
   </Function>
   <Function ID="24" Type="Collection" Name="Biem 1 keer collectie">
    <Step Number="0">32</Step>
@@ -405,8 +404,9 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">24</Step>
-   <Step Number="1" FadeIn="0" Hold="3500" FadeOut="0">17</Step>
+   <Step Number="0" FadeIn="0" Hold="2598" FadeOut="0">24</Step>
+   <Step Number="1" FadeIn="0" Hold="300" FadeOut="0">16</Step>
+   <Step Number="2" FadeIn="0" Hold="3500" FadeOut="0">17</Step>
   </Function>
   <Function ID="50" Type="Audio" Name="nijslezer-09.wav" Path="nijslezer">
    <Speed FadeIn="0" FadeOut="0" Duration="17910"/>
@@ -466,7 +466,7 @@
    <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="60" Type="Sequence" Name="Applaus geluid &amp; licht" BoundScene="59">
-   <Speed FadeIn="300" FadeOut="300" Duration="500"/>
+   <Speed FadeIn="200" FadeOut="200" Duration="350"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -509,7 +509,7 @@
     <Font>Default</Font>
    </Appearance>
    <Button Caption="Blackout" ID="29" Icon="">
-    <WindowState Visible="False" X="30" Y="30" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="15" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -522,7 +522,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="TV" ID="0" Icon="">
-    <WindowState Visible="False" X="30" Y="100" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="85" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -535,7 +535,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Muziek" ID="2" Icon="">
-    <WindowState Visible="False" X="30" Y="170" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="155" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -548,7 +548,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Huskeamer" ID="3" Icon="">
-    <WindowState Visible="False" X="30" Y="240" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="225" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -561,7 +561,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Plysje ljocht" ID="4" Icon="">
-    <WindowState Visible="False" X="30" Y="310" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="295" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -574,7 +574,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Onwâr" ID="5" Icon="">
-    <WindowState Visible="False" X="30" Y="380" Width="70" Height="65"/>
+    <WindowState Visible="True" X="10" Y="365" Width="70" Height="65"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -587,7 +587,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <CueList Caption="Cue list" ID="1">
-    <WindowState Visible="False" X="110" Y="30" Width="705" Height="575"/>
+    <WindowState Visible="True" X="85" Y="15" Width="620" Height="590"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -603,6 +603,45 @@
     <Stop/>
     <SlidersMode>Crossfade</SlidersMode>
    </CueList>
+   <Button Caption="Applaus" ID="6" Icon="">
+    <WindowState Visible="True" X="10" Y="435" Width="70" Height="65"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="60"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Nijslêzer test" ID="7" Icon="">
+    <WindowState Visible="True" X="10" Y="505" Width="70" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="54"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Biem test" ID="8" Icon="">
+    <WindowState Visible="True" X="10" Y="580" Width="70" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="49"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
